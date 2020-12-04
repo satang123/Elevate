@@ -1,0 +1,93 @@
+.section {
+    padding: 90px 0;
+}
+
+ .about-section {
+    padding: 0;
+     .grid {
+         align-items: center;
+
+         .about {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center left;
+            min-height: 720px;
+            display: flex;
+            align-items: center;
+            background-attachment: fixed;
+    
+            .item-about {
+                text-align: center;
+
+                .title {
+                    @include until($tablet) {
+                        font-size: 24px;
+                    }
+                }
+            }
+    
+        }
+    
+    
+        .about-text {
+            padding: 20px 15px;
+
+            @include at-least($small-desktop) {
+                padding: 0 120px;
+            }
+
+            h2 {
+                text-align: left;
+            }
+
+            .title {
+                line-height: 40px !important;
+                padding-bottom: 40px;
+            }
+        }
+     }
+ }
+
+ .services {
+    background-color: #eee;
+    h2 {
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .services-bg-img {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        @include until($small-tablet) {
+            display: none;
+        }
+    }
+
+    .item-service {
+        @include until($small-tablet) {
+            text-align: center;
+            max-width: 400px;
+            margin: auto;
+            width: 100%;
+        }
+        h4 {
+            text-transform: uppercase;
+            @include until($tablet) {
+                font-size: 25px;
+            }
+        }
+    }
+ }
+
+ .portfolio {
+     text-align: center;
+
+     .view-more {
+        margin: 115px 0 0;
+     }
+ }
+
+ .clients {
+    text-align: center;
+}

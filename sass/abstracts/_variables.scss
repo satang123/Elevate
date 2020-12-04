@@ -1,0 +1,44 @@
+$font-family-base: "Work Sans", sans-serif;
+$font-family-alt: "Fjalla One", sans-serif;
+$icon-family-base: "ThemeIcons";
+
+$font-size-base: 16px;
+$line-height-base: 30px;
+
+$text-color: #080808;
+$link-color: inherit;
+
+$headings-font-family: $font-family-alt;
+$headings-font-weight: 400;
+$headings-line-height: 100px;
+$headings-color: #FE015A;
+
+$brand-color: #ffffff;
+$brand-color-alt: #000000;
+
+$button-color: $brand-color;
+$button-text-color: #000000;
+
+// viewport & screen sizes
+$mobile: 480px;
+$small-tablet: 768px;
+$tablet: 1024px;
+$small-desktop: 1280px;
+$desktop: 1480px;
+$viewport-increment: 1px;
+
+// layout
+$grid-columns: 12;
+$grid-gutter: 20px;
+
+// header
+$desktop-header-height: 60px;
+$mobile-header-height: 60px;
+$hamburger-height: 21px;
+$hamburger-width: 30px;
+$hamburger-line-height: 3px;
+$hamburger-translateY: ($hamburger-height - $hamburger-line-height) / 2;
+
+// centering
+$centering-width: 1500px; // centering-width = width + 80 (gutter width)
+$small-centering: 1100px; // centering-width = width + 80 (gutter width)

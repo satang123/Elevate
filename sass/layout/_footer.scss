@@ -1,0 +1,115 @@
+.footer {
+    background-color: #000000;
+    padding: 0;
+
+    .footer-credits {
+        align-items: flex-end;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        @include until($mobile) {
+            align-items: flex-start;
+            flex-flow: column;
+            align-items: center;
+        }
+    }
+
+    .footer-top {
+        border-bottom: 1px solid #ffffff;
+        padding: 30px 0;
+        .widget {
+            color: #ffffff;
+
+            @include until($small-tablet) {
+                text-align: center;
+            }
+
+            h5 {
+                line-height: 0;
+                padding: 10px 0;
+                font-size: 18px;
+                text-transform: capitalize;
+                letter-spacing: 1px;
+                margin-top: 20px;
+                margin-bottom: 0;
+                color: #ffffff;
+            }
+
+            a {
+                font-size: 18px;
+
+                &:hover {
+                    color: #fe015a;
+                }
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            .button {
+                font-size: 20px;
+                color: #000000;
+
+                &:hover {
+                    color: #ffffff;
+                    border: 1px solid #ffffff !important;
+                }
+            }
+
+            h4 {
+                text-transform: uppercase;
+                text-align: center;    
+                color: #ffffff;  
+                
+                @include until($mobile) {
+                    line-height: 30px;                  
+                }
+                
+                @include until($tablet) {
+                    font-size: 18px;                    
+                }
+            }
+
+            .slider-button {
+                text-align: center;
+
+                a {
+                    border: 1px solid #000000;
+                    text-transform: capitalize;
+                }
+            }
+        }
+
+        .footer-social {
+            text-align: right;
+            color: #ffffff;
+
+            @include until($small-tablet) {
+                text-align: center;
+                padding-left: 0;
+            }
+
+            li {
+                list-style: none;
+
+                a {
+                    text-transform: capitalize;
+                    font-size: 18px;
+
+                    &:hover {
+                        color: #fe015a;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        padding: 10px 20px;
+        .footer-credits {
+            color: #fff;
+        }
+    }
+}
